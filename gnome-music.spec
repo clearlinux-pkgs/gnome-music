@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.26.2
-Release  : 1
+Release  : 2
 URL      : https://download.gnome.org/sources/gnome-music/3.26/gnome-music-3.26.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.26/gnome-music-3.26.2.tar.xz
 Summary  : No detailed summary available
@@ -17,6 +17,7 @@ Requires: gnome-music-data
 Requires: gnome-music-doc
 Requires: gnome-music-locales
 Requires: gnome-music-python
+Requires: pycairo-python3
 BuildRequires : gettext
 BuildRequires : gobject-introspection-dev
 BuildRequires : intltool
@@ -102,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1518035355
+export SOURCE_DATE_EPOCH=1518039647
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -114,7 +115,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1518035355
+export SOURCE_DATE_EPOCH=1518039647
 rm -rf %{buildroot}
 %make_install
 %find_lang gnome-music
