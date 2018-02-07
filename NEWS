@@ -1,0 +1,1253 @@
+Overview of changes in 3.26.2
+=============================
+
+Bugs fixed:
+ Block spotify plugin (#132)
+ DiscListBoxWidget: Update favorites playlist (784998)
+ albumartcache: Fix order in method call
+ flatpak: Update music repository URL (#138)
+ misc flatpak fixes
+
+Thanks to our contributors this release:
+ Felipe Borges
+ Jean Felder
+ Marinus Schraal
+
+Translations updated:
+ Catalan (Valencian)
+
+Overview of changes in 3.26.1
+=============================
+
+Translations updated:
+Dutch
+Icelandic
+Persian
+
+Overview of changes in 3.26.0
+=============================
+
+Translations updated:
+ Catalan
+ French
+ Romanian
+ Danish
+
+Overview of changes in 3.25.92
+==============================
+
+Bugs fixed:
+ 786454 Wrong player.set_playlist call in albumwidget.py
+ 780548 Problem scrolling albums on wayland
+ 709073 Different icon in System Settings Sound pane
+
+Thanks to our contributors this release:
+ Jan-Michael Brummer
+ Jean Felder
+ Marinus Schraal
+ Robert Greener
+
+Translations updated:
+ Croatian
+ Italian
+ Danish
+ Vietnamese
+
+Overview of changes in 3.25.91
+==============================
+
+Bugs fixed:
+ 786541 Add missing logger imports
+ 786315 Make the playlist button a circle
+
+Thanks to our contributors this release:
+ Jean Felder
+ Jordan Petridis
+
+Translations updated:
+ Polish
+ French
+
+Overview of changes in 3.25.90
+==============================
+
+* Limit concurrent loading of coverart
+* Fixes to appdata
+* Use tracker:title-order for sorting
+
+Bugs fixed:
+ 783466 query: Use tracker:title-order() SPARQL function for title sorting
+ 785697 Remove comments from org.gnome.Music.json
+
+Thanks to our contributors this release:
+ Carlos Garnacho
+ Felipe Borges
+ Georges Basile Stavracas Neto
+ Kalev Lember
+ Marinus Schraal
+ Piotr Drąg
+
+Translations updated:
+ Turkish
+ Croatian
+ Czech
+ Malayalam
+
+Overview of changes in 3.25.4
+=============================
+
+* Build: depend on libtracker-sparql-2.0
+* Add Flatpak manifest
+* Mark forgotten string for translation
+
+Bugs fixed:
+ 776668 fix minor seek stutter
+ 774500 refactor gnome-music.in to be more readable
+ 781684 playlistview artist field incorrect
+ 777346 allow seek using arrow keys
+ 781754 fix media-player-keys bus name
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Carlos Garnacho
+ Carlos Soriano
+ Felipe Borges
+ Marinus Schraal
+ Pablo Palácios
+ Piotr Drąg
+
+Translations updated:
+ Belarusian
+ Slovenian
+ Polish
+ Indonesian
+
+
+Overview of changes in 3.24.1.1
+===============================
+
+* Revert desktop file rename
+* In turn revert Flatpak manifest addition
+
+Overview of changes in 3.24.1
+=============================
+
+* Add Flatpak manifest
+* Fix crashers
+* Up Grilo requirements
+
+Bugs fixed:
+ 780523 playlist dialog shows the playlist that is going to be deleted
+ 779905 build: Add a first version of Flatpak manifest
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Carlos Soriano
+ Marinus Schraal
+
+Translations updated:
+ Portuguese
+ Norwegian bokmål
+ Greek
+ Croatian
+
+Overview of changes in 3.24.0
+=============================
+
+Translations updated:
+ Russian
+ Latvian
+ Brazilian Portuguese
+
+Overview of changes in 3.23.92
+==============================
+
+* Code cleanups
+* Local art retrieval added
+* AppData screenshots updated
+
+Bugs fixed:
+ 779013 only one (older) screenshot in appdata file
+ 779585 Window is wider than 1024px
+ 777041 Unexpected behaviour of playlist notification actions, sometimes
+        deletes, sometimes not
+ 776668 double click on seek bar pauses the songs
+ 779052 MPRIS TrackList GoTo Method Crashes gnome-music
+ 779584 Handle coverart extraction in gnome-music
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Andreas Nilsson
+ Carlos Garnacho
+ Marinus Schraal
+
+Translations updated:
+ Hungarian
+ Slovak
+ Serbian
+ Galician
+ Lithuanian
+ Italian
+ Czech
+ Polish
+ Danish
+ Scottish Gaelic
+ Occitan
+ French
+ Korean
+ Indonesian
+ Basque
+ Icelandic
+ Swedish
+ Chinese (Taiwan)
+ Finnish
+
+Overview of changes in 3.23.91
+==============================
+
+* Code cleanups
+
+Bugs fixed:
+ 774470 Use song instead of track in the source codebase
+ 774449 Cleanup baseview.py
+
+Thanks to our contributors this release:
+ Marinus Schraal
+ Rashi Sah
+ Suyash Garg
+
+Translations updated:
+ Finnish
+ Kazakh
+ Danish
+ Norwegian bokmål
+ Slovak
+ Polish
+ Basque
+ Indonesian
+ Italian
+ Hungarian
+ Catalan
+ Friulian
+ Ukrainian
+ German
+ Brazilian Portuguese
+ Serbian
+ Spanish
+
+Overview of changes in 3.23.90
+==============================
+
+* Empty-state added for playlist dialog
+* Cleanups
+
+Bugs fixed:
+ 772089 [playlist dialog] implement empty state dialog
+ 776680 'Select All' doesn't have an action in Artists tab
+ 777541 Crashes as soon as trying to play a song
+ 777219 PEP 8 fix : application.py
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Alberto Fanjul
+ Marinus Schraal
+ Yash Singh
+
+Translations updated:
+ Czech
+ Indonesian
+ German
+ Turkish
+ Catalan
+ Polish
+ Slovak
+ Friulian
+
+Overview of changes in 3.23.4
+=============================
+
+* Revamp notifications and drop GdNotification
+* More cleanups
+
+Bugs fixed:
+ 776157 Improve notifications' interaction
+ 776849 Gnome-music crashes on clicking "select all" in album
+ 777127 Pressing back after no search results from single album view leads to
+        force close
+ 777235 Pressing back button when searching through a subview, should turn
+        search off and go back
+ 777216 PEP 8 fix : __init__.py
+ 776673 Recompile resources when builddir is not same as srcdir
+ 772975 In a playlist repeatSong/shuffle/repeatSong take effect from the next
+        song
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Alberto Fanjul
+ Georges Basile Stavracas Neto
+ Marinus Schraal
+ Sambhav Kothari
+
+Translations updated:
+ Finnish
+ Kazakh
+ Spanish
+
+Overview of changes in 3.23.3
+=============================
+
+* Start to use Grilo for storing metadata
+* Rework starring widget
+* DistListBox improvements
+* Stop walking directories for no reason
+* Finish move to tracker async calls
+
+Bugs fixed:
+ 774754 Use correct Grilo property for favourite tracking
+ 772689 Use tracker async queries
+ 775759 create_playlists cursor_callback method has a TypeError
+ 775930 Correct error variable names
+
+Thanks to our contributors:
+ Carlos Garnacho
+ Georges Basile Stavracas Neto
+ Marinus Schraal
+ Sambhav Kothari
+ Yash Singh
+
+Translations updated:
+ German
+ Hungarian
+ Russian
+
+Overview of changes in 3.23.2
+=============================
+
+* Rely on Cairo for cover scaling
+* Smooth progressbar
+* Make more tracker calls async
+* General cleanups
+* Tackle long-standing issues with album separation
+
+Bugs fixed:
+ 773478 artistviews: pep cleanup
+ 772263 Use unicode in translatable strings
+ 772698 async work
+ 774260 handle optional album-artist in queries
+ 774481 Add missing license header to gnome-music.in
+ 773769 songsview: pep cleanup
+ 772628 player: make progress scale  move smoothly
+
+Thanks to our contributors:
+ Carlos Garnacho
+ Clayton G. Hobbs
+ Marinus Schraal
+ Pablo Palácios
+ Piotr Drąg
+ Suyash Garg
+ Yash Singh
+
+Translation updated:
+ Czech
+ Friulian
+ Hungarian
+ Norwegian bokmål
+ Slovenian
+
+Overview of changes in 3.23.1
+=============================
+
+* Rework art lookup
+* Add HiDPI support (90% done)
+* Add mnemonics
+* Rework about dialog
+* Split up views & widgets
+* Rework the album widgets
+* Show multi-disc albums as such
+* Make playlist retrieval non-blocking
+* Add composer label & search
+
+Bugs fixed:
+ 761185 Help should use tag when referring to application names
+ 771348 Use | as I18N separator
+ 772403 Album art: also consider height when scaling
+ 765476 Crashes upon opening with a GLib error
+ 719452 Provide proper output if gobject-introspection-devel is missing
+ 773192 Fix playlists loading time
+ 705094 Display more details on Album view
+ 750827 Album views - if an album has multiple disks, group tracks by disk
+ 761891 Weird interaction selection mode + favourites
+
+Thanks to our contributors:
+ Carlos Garnacho
+ Georges Basile Stavracas Neto
+ Konstantin PospelovSebastian Rasmussen
+ Marinus Schraal
+ Sebastian Rasmussen
+
+Translation updated:
+ Basque
+ Chinese (simplified)
+ Chinese (Taiwan)
+ Czech
+ Danish
+ Friulian
+ German
+ Italian
+ Swedish
+
+Overview of changes in 3.22.0
+=============================
+
+* Update mainters in doap
+
+Translations updated:
+ Ukrainian
+ Catalan
+ Scottish Gaelic
+ Persian
+
+Overview of changes in 3.21.92
+==============================
+
+* Fix keyboard play/pause handling
+* Remove top separator in song lists
+* Do not remove static playlists on Delete keypress
+
+Bugs fixes:
+ 771249 Static playlists should not be removed using the Delete key
+ 770178 Remove the first Songs row separator
+ 754096 Space doesn't always toggle pause/play
+
+Thanks to our contributors:
+ Konstantin Pospelov
+ Marinus Schraal
+ Yash Singh
+
+Translations updated:
+ Danish
+ Greek
+ Latvian
+ Galician
+ Swedish
+ Hebrew
+ Vietnamese
+ British English
+ Lithuanian
+ Kazakh
+ Korean
+ Friulian
+ Serbian
+
+Overview of changes in 3.21.90
+==============================
+
+* New keyboard shortcuts and a shortcuts window to go with it
+* Move to cleanup the codebase style (PEP-8) & use docstrings, see README
+* Better sorting in albums and artists view
+* Playlist dialog enhanced with a 'new playlist' entry
+* Move to GtkFlowBox for albums view, a significant performance improvement
+
+Bugs fixed:
+ 761502 Include playlists from Music dir only & order static playlists on top
+ 766115 Return songs only once
+ 746447 Require tracker 1.8 for titled playlists
+ 765609 Fix mpris repeatmode
+ 761625 Cleanup artist/author ambiguity
+ 747953 Don't leak information over http through Grilo & unregister sources
+ 754700 Require Grilo 0.3.1 and use the album-artist key if available
+ 742531 Ignore punctuation when sorting albums and artists, requires tracker 1.9
+ 758637 Implement new keyboard shortcuts
+ 757833 Add GtkShortcut window
+ 769774 Fix sidelist shadow
+ 769772 Use GtkSearchBar for the searchbar + misc fixes
+ 744834 Add new playlist entry to playlist dialog + misc fixes
+ 760164 Use GtkFlowBox for albums view
+
+Thanks to our contributors:
+ Billy Barrow
+ Carlos Garnacho
+ Divyanshu Vishwakarma
+ Elias Entrup
+ Evandro Giovanini
+ Felipe Borges
+ Gaurav Narula
+ Georges Basile Stavracas Neto
+ Kevin Haller
+ Marinus Schraal
+
+Translations updated:
+ Occitan
+ Catalan
+ Spanish
+ French
+ Friulian
+ Slovak
+ Czech
+ Indonesian
+ Brazilian Portuguese
+ German
+ Hungarian
+ Finnish
+ Polish
+ Portuguese
+
+Overview of changes in 3.20.2
+=============================
+
+Bugs fixed:
+ 705069 Port to Gio GDBUS API
+ 763618 Clarify jhbuild instructions in README
+ 755089 Emit playback-status-changed after playlist ends
+ 744820 Accept response on row-activated in Playlist Dialog
+ 765598 Bump Gtk+ minimum version to 3.19.3
+ 761961 Stop the player when destroying window
+
+Translations updated:
+ Swedish
+ Friulian
+ Esperanto
+ Brazilian Portuguese
+ Occitan
+
+Overview of changes in 3.20.0
+=============================
+
+Translations updated:
+ Danish
+ Hungarian
+
+Overview of changes in 3.19.92
+==============================
+
+Bugs fixed:
+ 762821 Update Grilo plugin ranks to 0.3 format
+ 761941 Fix Pango critical warnings on searchbar
+ 761890 Check if visible child is ArtistsAlbumsWidget on search toggle
+ 763304 Don't assume that nmm:MusicPieces will have a nie:url in playlists
+ 744821 Properly de/activate select button on PlaylistDialog when navigating w/ arrow keys
+ 744831 Fix crash while deleting multiple playlists
+ a173f2 Update libgd
+
+Translations updated:
+ Occitan
+ Korean
+ Slovenian
+ French
+
+Special thanks to the new contributors:
+ Gaurav Narula
+ Marinus Schraal
+ Prashant Tyagi
+ Saiful B. Khan
+
+Overview of changes in 3.19.91
+==============================
+
+Bugs fixed:
+ 744829 No more duplicate playlists on the sidebar
+ 762406 More Grilo 0.3 transition fixes
+ 762265 No more notifications on track changes
+
+Translations updated:
+ Slovak
+ Occitan
+ Ukrainian
+
+Overview of changes in 3.19.90
+==============================
+
+Bugs fixed:
+ 761173 Update tracker queries to sparql 1.1 syntax
+ 760170 Fix check button appearance on AlbumWidget
+ 760170 Fix check buttons appearance in Songs and Playlist view
+ 736463 Reposition the scrollbar in the search window
+ 760171 Resized songs list for better viewing in large window
+
+Translations updated:
+ Latvian
+ Bulgarian
+
+Overview of changes in 3.19.4
+=============================
+
+Bugs fixed:
+ Let GtkApplication automatically load the app-menu
+ Refactor the way we connect menu actions
+ 758942 Use grilo 0.3 for GNOME 3.20
+ 758942 Fix deprecation warnings in GTK+
+ Update libgd from master
+ Scale the playlist name to match the mockups
+ 759024 Use the path of the filter model in search results
+ 739924 Make search find strings with accents
+ 759882 Fix warnings when switching between stack pages
+ Add symbolic icon
+ 760033 Make albumart fetching truly asynchronous
+ 760033 Defer serialization of default icon
+ 760033 Set model on the view after all insertions happened
+ 760033 Remove check for dup jobs
+ 760033 Don't add items on idle
+ 760033 Depend on Tracker >= 1.7.1
+ 759587 Rework songs, artists, playlists, and albums queries
+ Pass width/height during pixbuf loading
+ 751163 Restrict music catalog to the Music folder
+ 760381 Use GIO async APIs to download cover art
+ 734958 Increase the maximum width of the artist and track name
+
+Translations updated:
+ Spanish
+ Slovenian
+
+Overview of changes in 3.18.2
+=============================
+
+Bugs fixed:
+ 755601 Fix styling for entry tags (libgd)
+ 756256 Fix XML tag in help
+ 746446 Reset app title to Music after leaving album view
+ 756330 Fix crashes when coming back from search view
+ 757227 Fix missing toolbar when coming back from search resultg
+
+Translations updated:
+ Serbian
+ German
+ Greek
+ Czech
+ Basque
+ Lithuanian
+ Hungarian
+
+Overview of changes in 3.18.0
+=============================
+
+Translations updated:
+ Danish
+ Swedish
+
+
+Overview of changes in 3.17.92
+=============================
+
+Bugs fixed:
+ 744827 Empty stars in 'Search' view
+ 754654 Fixes for staticmethod definitions
+ 754702 Search drop-down doesn't show the right default source
+ 754836 Toggling search of  when on a albumWidget doesn't make search view disappear
+ 754977 gnomemusic/widgets.py using depreciated PARAM_READWRITE
+
+Translations updated:
+ Added Icelandic
+ Finnish  update
+ Fix FSF address in Polish
+ French
+ Kazakh
+ Korean
+ Lithuanian
+ Turkish
+ Persian
+
+
+Overview of changes in 3.17.91
+=============================
+
+Bugs fixed:
+ 738516 Tags in search textbox are broken
+
+Translations updated:
+ Chinese (Taiwan)
+ French
+ Galician s
+ German
+ Greek
+ Indonesian
+ Italian
+ Polish
+ Update Catalan transation
+
+
+Overview of changes in 3.17.90
+=============================
+
+Bugs fixed:
+ 744658 Playlists sidebar - border is cut off
+ 753488 Clicking on artist on search results does nothing
+
+Translations updated:
+ Brazilian Portuguese
+ Czech
+ Fix Portuguese desktop keywords
+ Friulian
+ Norwegian bokmål
+ Turkish
+
+
+Overview of changes in 3.17.4
+=============================
+
+Bugs fixed:
+ 705070 Last.fm/libre.fm integration
+ 747233 Remove "All Artists"
+ 752591 Convert margin_right to margin_end
+ 752592 Trivial code formatting cleanups
+
+Several deprecations were removed
+More performance improvements
+Translations updated
+
+
+Overview of changes in 3.17.3
+=============================
+
+Bugs fixed:
+ 743362 Give a nicer welcome
+ 744464 No results screen for Search
+ 747749 Cant't play favourite song in Album view
+ 748375 #!/bin/bash in autogen.sh
+ 749981 Tracks outside Music and Downloads are displayed in playlists
+
+Translations updated:
+ Added Occitan
+ Dutch  316
+ Esperanto
+ Fix to Catalan
+ Greek
+ Norwegian bokmål
+ Slovak
+ Spanish
+ Tajik
+ Turkish
+ l10n: Update Japanese
+ update zh_CN
+
+
+Overview of changes in 3.16.0
+=============================
+
+Translations updated:
+ Basque language
+ Finnish  update
+ Fix a syntax error in desktop file keywords Bosnian
+ Indonesian
+ Tajik
+ Update Aragonese
+ Update Catalan
+
+
+Overview of changes in 3.15.92
+=============================
+
+* Bug fix release
+
+Bugs fixed:
+ 744657 Loading in-app notification gets stuck
+ 745646 Improve sorting of "songs" view
+ 745647 shuffleHistory fixes
+ 745648 Song view elements jump around
+ 745650 Not Enough Space Given For Track Titles in Album View
+
+Translations updated:
+ Added Bosnian
+ Danish
+ German
+ Korean
+ Polish
+ Serbian
+ Slovenian
+ Swedish
+ Turkish
+ l10n: Update Japanese
+
+
+Overview of changes in 3.15.91
+=============================
+
+* Bug fix release
+
+Bugs fixed:
+ 705852 Now playing indicator is lost on switching views / artists / artist albums
+ 729377 Convert menu of gear button in the Playlists view into a popover
+ 729525 Show a loading animation when Add to Playlist is clicked in Albums and Artists view
+ 743310 Updates to Smart Playlist functionality in 3.15.4
+ 743883 Refresh Playlists/Songs view when star toggled
+ 743884 Protect smart playlists
+ 743901 Favorite Playlist and Starring implementation
+ 744005 stars in Album/Artist/Search views
+ 744655 Loading in-app notification is malformed
+ 744807 Last song on album view keeps repeating in "mix/no repeat" mode
+ 744832 Undo playlist delete --> reinsert at previous position
+
+Translations updated:
+ Basque language
+ Brazilian Portuguese
+ Chinese (Taiwan)
+ Czech
+ Fix German desktop file keyword
+ French
+ Galician s
+ Greek
+ Hebrew
+ Hungarian
+ Italian
+ Kazakh
+ Lithuanian
+ Norwegian bokmål  from Åka Sikrom
+ Russian
+ Slovak
+ Spanish
+ Swedish
+ Ukrainian
+ Update Aragonese
+
+
+Overview of changes in 3.15.90
+=============================
+
+* New smart playlist - Favourite tracks, all views updated to allow
+  making a track favourite
+* All Artists is not selected by default - improves performance
+* All smart playlists now retyurn max 50 items
+* Playlists menu now uses popover
+* Notification appears on loading operations
+* Favourite songs are now displayed on search view
+* GStreamer discoverer performance fixes from garnacho
+* Minor UI fixes
+
+
+* Bugs fixed:
+ 744005 stars in Album/Artist/Search views
+ 729525 Show a loading animation when Add to Playlist is clicked in Albums and Artists view
+ 729377 Convert menu of gear button in the Playlists view into a popover
+ 743310 Updates to Smart Playlist functionality in 3.15.4
+
+
+* Updated translations and help files
+
+Overview of changes in 3.15.4
+=============================
+
+* Smart playlists - Most Played, Never Played, Recently Played
+  The list is not yet final, stay tuned. Note that we use Last.fm's way
+  to count song as 'played' - more than 40% of song content should be played.
+* Chunked loading was removed - scrolling should be faster
+* Content is now hidden before fully loaded - notification on the progress will
+  land in master in next version.
+* Playlists are remvoed after time out, removal can be undone
+* Dependency cnahge: libmediaart-2.0.pc is now required
+* Replaygain tags are now supported
+* Overall performance fixes
+
+* Bugs fixed:
+ 729376 New Playlist in application menu doesn't do anything
+ 704257 Visible content loading
+ 742603 Regression: empty covers are oversized in playbar, still 'in-progress' on artists view
+ 742451 Support Undo when removing playlists
+ 733686 Gnome music will not launch
+ 726459 Crash on playlist tabs when new media has been scanned
+ 702519 Smart playlists
+ 742800 Playlist broken due to typo
+ 742123 Hitting 'cancel' while creating new playlist crashes program
+ 731613 gnome-music-3.12.2 fails to start if xdg default directories are not created
+ 742011 Query: add a/an to articles
+ 730269  ReplayGain support?
+
+* Updated translations and help files
+
+Overview of changes in 3.15.2
+=============================
+
+* Better thread handling while fetching album art
+* Some UI/UX goodies
+* Notification can now be disabled
+* 'The' (and translation) is not disregarded during sorting
+* MPRIS improvements
+
+* Bugs fixed:
+ 736925 Remove deprecation warnings from AlbumWidget.ui
+ 737142 Remove remaining gtk deprecation warnings
+ 737571 No covers loaded on libmediaart 0.6.0
+ 736241 Prefer embedded album art over downloaded
+ 732151 High CPU and sluggish performance
+ 733473 Use "Alt + left arrow" to navigate back
+ 738465 Have a dconf switch to disable notifications
+ 731392 Nicer empty state
+ 729378 Disregard "The" in titles
+ 734513 play/pause is activated twice when pressing spacebar and play/pause button is active/selected
+ 729309 Add support for MPRIS Playlists
+ 740211 Add support for MPRIS TrackList
+ 740212 Bump MPRIS support to 2.2
+ 740330 Album view - music icons are badly rendered
+ 740524 Missing license headers in playlists.py and searchbar.py
+ 731639 The pictures have different proportions, influencing the effect of alignment
+ 729459 under Artists, tracks in the same album are very far apart from each other
+ 740490 Music "forgets" search string, but search results remain
+
+* Updated translations and help files
+
+Overview of changes in 3.14.0
+=============================
+
+* Updated translations and help files
+
+Overview of changes in 3.13.92
+=============================
+
+* Bugs fixed:
+ 735890 Fix the icons in RTL with new GTK+
+
+* Updated translations and help files
+
+Overview of changes in 3.13.90
+=============================
+
+* Ported to GtkActionbBar - now requires GTK+ 3.12
+* Correct icoin is displayed for playlist menu (https://wiki.gnome.org/Initiatives/GnomeGoals/GearIcons)
+* Better search UI
+* HighContrast icons
+* Improved Back navigation
+* Notifications now behave correctly when paused and less flicker
+
+* Bugs fixed:
+ 734786 center the search results
+ 734404 Missing high contrast icon
+ 734122 unable to switch to all albums view after return from search view
+ 734117 Pause button does not change to play button in the notification
+ 732150 Remove custom player bar styling
+ 732951 Don't use emblem-system-symbolic
+
+* Updated translations and help files
+
+
+Overview of changes in 3.13.4
+=============================
+
+* Bump python3 requirement to 3.3 (due to str.casefold)
+
+* Bugs fixed:
+ 733095  Seeking in track above 36 minutes leads to crash
+
+* Updated translations and help files
+
+
+Overview of changes in 3.13.3
+=============================
+
+* Playlists are now stored in Tracker
+* Back button now returns back to Search if available
+
+* Bugs fixed:
+ 707461 add man page
+ 729311 Use Tracker to save Playlists
+ 728254 Incorrect item is removed in playlists if it has duplicates
+ 728255 Don't show playlists in Songs
+ 728330 Crash when the name of the new playlist contains special characters
+
+* Updated translations and help files
+
+
+Overview of changes in 3.13.2
+=============================
+
+* Improved search with source and match type selection
+* Remote sources support: Jamendo, Magnatune, UPnP/DLNA
+* Player bar now looks better when window is small
+
+* Bugs fixed:
+ 729100 Media art in notifications is blank instead of symbolic when media art is not found
+ 729102 Notification doesn't show up when media art doesn't exist
+ 728255 Don't show playlists in Songs
+ 725949 gnome-music buttons have no tooltips
+ 728407 Enabling selection mode via right-click doesn't work inside albums in Albums view
+ 729521 Albums list in Artists view shouldn't be sensitive when in selection mode
+ 706948 Only show music from my ~/Music folder
+ 699807 PlayerToolbar - artist and track name can shrink to nothing
+ 730205 AttributeError: 'Stack' object has no attribute 'get_child_by_name'
+ 726713 Update of songs interferes with selection mode
+
+* Updated translations and help files
+
+
+Overview of changes in 3.13.1
+=============================
+
+* Thumbnail fetching was reworked. now should be much faster
+* New dependency: libmediaart
+* Updated playlist UI
+* Now requires GTK 3.10
+* Shuffle menu is now a popover
+* Load More button was removed
+
+* Bugs fixed:
+ 724627 Playlists UX review
+ 726721 Some tracks are identified as 'MediaVideo' and crash in various places
+ 727444 gnome-music crashed with OSError in_on_source_added(): [Errno 5] I/O error
+ 727522 Accelerator for Select All doesn't work
+ 728323 Set the icon name of the window as "gnome-music"
+ 724112 Crashes when cannot connect to tracker
+ 702565 Load cover art on scroll in Albums and Artists view
+ 699832 Replace Load More with autoloading on pressure
+ 729096 Media art is not shown in MPRIS clients
+
+* Updated translations and help files
+
+
+Overview of changes in 3.11.92
+=============================
+
+* Improved and tranlated help
+* Space now plays/pauses the current song
+* Minor UI updates to playlists
+
+
+* Bugs fixed:
+ 707454 Space switches to next item
+ 724627 Make select button insensitive while creating New Playlist
+ 725904 Tracks don't appear in artists view for albums that have many tracks
+
+
+* Updated translations
+
+Overview of changes in 3.11.91
+=============================
+
+* Initial help infrastructure
+* More info is printed if the track cannot be played
+* Last 10 played tracks are stored in shuffle history
+* Other minor improvements and bug fixes
+
+
+* Bugs fixed:
+ 707744 Song is being replayed when paused
+ 724228 Remove 'now playing' from the app menu
+ 707457 Restart current track when Previous button was clicked and position is more than 3 seconds
+ 725355 Do not crash if we happen to come across a filename we can't decode
+ 723942 Search on keypress function opens search bar even when pressing any key
+ 724954 Selecting all albums is not visible at first
+ 707376 Set the position of the view scrollbar to current song when a song is changed
+
+
+* Updated translations:
+ Spanish
+ Norwegian bokmål
+ Tajik
+ Czech
+ Brazilian Portuguese
+ Hebrew
+ Chinese
+ Lithuanian
+ Italian
+ Hungarian
+ Finnish
+
+Overview of changes in 3.11.90
+=============================
+
+* Initial playlists support
+* Filter-as-you-type
+* Misc fixes and improvements
+
+
+* Bugs fixed:
+ 700022 app no longer fits half maximized
+ 721297 Shuffle is not random enough
+ 723765 Static spinner superimposed over album artwork
+ 708154 Crash when Search button is toggled on No Music view
+ 724027 theme: actionbar has a doubleborder
+ 724025 searchbar isn't styled properly
+ 724016 don't segment artist list sidebar
+ 721595 Typing should trigger a search
+ 723750 The stack switcher is gone when run gnome-music with GTK+ 3.11
+ 709234 Music cannot be run via ssh forwarding
+
+
+* Added translations:
+ Aragonese
+ Esperanto
+
+* Updated translations:
+ Hebrew
+ Lithuanian
+ Traditional Chinese
+ Norwegian bokmål
+ Turkish
+ Finnish
+ Czech
+ Greek
+ Brazilian Portuguese
+ Galician
+ Chinese simplified
+ Slovenian
+ German
+ Italian
+ Spanish
+ Tajik
+
+
+Overview of changes in 3.11.2
+=============================
+
+* Exit selection mode on pressing Esc
+* Pep8 compatibility
+* Broken AppData file was removed from sources
+
+* Bugs fixed:
+ 707590 Fix app menu accelerator conflict
+ 708279 Make the cancel button as center vertically
+ 709033 Album Cover art not displayed in the notifications
+ 707399 Add translator comment to not translate GSettings values
+ 705853 Enter selection mode on right-click
+ 707633 Save window position, size and maximization state
+ 709465 Update position while switching songs
+
+* Added translations:
+ Afrikaans
+ Catalan (Valencian)
+ Malayalam
+ Telugu
+
+* Updated translations:
+ Norwegian bokmål
+ Turkish
+ Persian
+ Simplified Chinese
+ Slovenian
+ Tajik
+ Spanish
+ Galician
+ Greek
+ Dutch
+
+
+Overview of changes in 3.10.0
+=============================
+
+* Added translations:
+ Estonian
+ Belarusian
+
+* Updated translations:
+ Assamese
+ Portuguese
+ Latvian
+ Slovak
+ Ukrainian
+ Traditional Chinese
+ Catalan
+ Kannada
+ Indonesian
+ Hebrew
+
+
+Overview of changes in 3.9.92
+=============================
+
+* Added AppData description
+
+* Icons are now RTL-compatible
+
+* Notifications appear during the playback
+
+* All views can be filtered via search button or Ctrl+F shortcut
+
+* URLs with no FileDataObject (*.cue) are now filtered
+
+* Fixed MPRIS commands: close, play, thumbnail display
+
+* Songs view now displays 'Unknown Album' for tracks with no album set
+
+* Gnome Music notifies about startup
+
+
+* Bugs fixed:
+ 702377 Add support for notifications
+ 703303 Music doesn't properly tell MPRIS clients that the song is replayed when in repeat song mode
+ 706576 Repeat/Shuffle icons should have RTL variants
+ 707388 Add AppData description
+ 707632 MPRIS Close command is broken
+ 707824 No notification when Music starts
+ 707937 freeze-break branch | Crash when try to start song
+ 707938 gnome-music crashes with TypeError: Argument 0 does not allow None as a value
+ 708102 Thumbnail no longer shows up in MPRIS clients
+ 708103 Playing default playlist is broken
+ 708116 Crash in notification when the current track gets hidden while searching
+ 708117 Use RTL variants of buttons in notifications on RTL languages
+ 708159 Empty album column when an album title is unknown
+
+* Added translations:
+ Basque
+ British English
+ Catalan
+ Danish
+ Dutch
+ French
+ Indonesian
+ Korean
+ Latvian
+ Traditional Chinese
+
+* Updated translations:
+ Brazilian Portuguese
+ Czech
+ Finnish
+ Galician
+ German
+ Hungarian
+ Italian
+ Lithuanian
+ Norwegian bokmål
+ Polish
+ Russian
+ Serbian
+ Slovak
+ Slovenian
+ Spanish
+ Tajik
+
+
+Overview of changes in 3.9.91
+=============================
+
+* All songs will now be loaded in Songs view after switching to it
+  for the first time
+
+* First song in Songs view will play if Play is executed in MPRIS and
+  there is no current playlist
+
+* The URIs are now discovered asynchronously, to make loading songs
+  faster
+
+* An error icon will now show up when the file is deleted
+
+* The message when no music files are found is now more verbose
+
+* Bugs fixed:
+ 700776 Licensing problems
+ 705855 Crash when attempting to get properties over DBus
+ 706019 Don't use the discoverer if we don't care of the results
+ 706294 Duration in Albums view increases every time an album is se...
+ 706353 About box changes size when license button is toggled on, l...
+ 706457 Invalid copyright headers
+ 706533 More explanation when Music says "No Music Found"
+ 706800 Cancel button in toolbar shouldn't be emphasized
+ 706947 Can't shuffle my entire library without clicking "load more...
+
+* Added translations:
+ Irish
+ Tajik
+
+* Updated translations:
+ Brazilian Portuguese
+ Czech
+ Galician
+ Italian
+ Lithuanian
+ Norwegian bokmål
+ Polish
+ Slovak
+ Slovenian
+ Spanish
+
+
+Overview of changes in 3.9.90
+=============================
+
+* Initial release
