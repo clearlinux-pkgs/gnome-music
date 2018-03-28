@@ -1,28 +1,194 @@
-Overview of changes in 3.26.2
+Overview of changes in 3.28.0
 =============================
 
+* Update appdata
+
 Bugs fixed:
- Block spotify plugin (#132)
- DiscListBoxWidget: Update favorites playlist (784998)
- albumartcache: Fix order in method call
- flatpak: Update music repository URL (#138)
- misc flatpak fixes
+ albumartcache: Do not close non-existing stream on error (!95)
+ albumartcache: Fix possible lookup loop (!95)
+ albumartcache: Do not send two signals on error (!95)
 
 Thanks to our contributors this release:
- Felipe Borges
+ Georges Basile Stavracas Neto
+ Marinus Schraal
+
+Translations updated:
+ Croatian
+ Danish
+ Friulian
+ British English
+ Turkish
+
+Overview of changes in 3.27.92.1
+================================
+
+Bugs fixed:
+ Arch dependent file in /share (#159)
+
+Overview of changes in 3.27.92
+==============================
+
+* Port to Meson
+* Lots of fixes to the flatpak json
+* Fixes to playlists behaviour
+* Fix some shortcut logic
+* Fix issue with bluetooth headset input
+* Delayed loading of covers in albumsview to decrease startup time
+* Lots of general cleanups
+* Update to latest libgd
+
+Bugs fixed:
+ Music won't build from flatpak (#138)
+ Disable last.fm scrobbling if Music is disabled in GOA (#139)
+ playlistview: Remove obsolete column renderer (!61)
+ albumsview: Use correct checkbox style (!68)
+ playlistview: Only show icons for playing playlists (#149)
+ query: Filter out on-disk playlist formats (#72, #151)
+ Replace logger.warn with logger.warning (#153)
+ Switch to meson build system (#1)
+ window: Handle Gdk Audio keys (#93)
+ window: Restore selection popup functionality (#152)
+ meson: Add fallback in case XDG_DATA_DIRS is not set (!85)
+ Deleting a playlist does not stop the player (#156)
+ Follow up searches do not trigger an actual search (#148)
+ Changing playlist resets player model (#136)
+
+Thanks to our contributors this release:
+ Benoît Legat
+ Bilal Elmoussaoui
+ Georges Basile Stavracas Neto
+ Janne Körkkö
  Jean Felder
  Marinus Schraal
 
 Translations updated:
- Catalan (Valencian)
+ Swedish
+ Spanish
+ Friulian
+ Polish
+ Indonesian
+ Catalan
+ Chinese (Taiwan)
+ Brazilian Portuguese
+ Galician
+ Croatian
+ Finnish
+ Dutch
+ German
+ Hungarian
+ Slovak
+ Serbian
+ Korean
+ Croatian
+ Italian
+ Czech
+ French
+ Vietnamese
+ Scottish Gaelic
+ Lithuanian
+ Kazakh
+ Latvian
 
-Overview of changes in 3.26.1
-=============================
+Overview of changes in 3.27.90
+==============================
+
+* Lots of cleanup/refactoring
+* Moved to Gitlab
+* Add album scrobbling
+* Dropped some more libgd use
+* Add context menu to interact with playlist items
+* Drag and drop reorder in playlists
+* Add album scrobbling
+* Rework notifications
+* Rework art cache
+* CI fixes
+* Last bits of HiDPI support
+
+Bugs fixed:
+ Clicking on cancel button from selection bar crashses music (#142)
+ Crashed when trying to play music over UPnP (#46)
+ Playlists are not displayed (#127)
+ Fix deprecated accelerator call (#2)
+ Crash during startup in albumart lookup (#121)
+ Use stack for covers in player (#55)
+ Finish HiDPI support (#65)
+ Scale art more efficiently (#81)
+ Playlist not deleted after close (#106)
+ Allow undo on playlist track removal (#50)
+ Fix artist/album search return all songs (#4)
+ Replace deprecated override_color call (#3)
+ Allow access to host cache from flatpak (!15)
+ Reset song to clean on new playlist (#135)
+ Use context menu on playlist tracks (#48)
+ Replace deprecated add_accelerator call (#2)
+ Console spam on startup related to Spotify (#132)
+
+Thanks to our contributors this release:
+ Alberto Fanjul
+ Felipe Borges
+ Gyanesh Malhotra
+ Jean Felder
+ Marinus Schraal
+ Subhadip Jana
 
 Translations updated:
-Dutch
-Icelandic
-Persian
+ German
+ Polish
+ Friulian
+ Indonesian
+ Finnish
+ Swedish
+ Catalan
+ Hungarian
+ Esperanto
+
+Overview of changes in 3.27.4
+=============================
+
+Bugs fixed:
+ Migrate from intltool to gettext (#787272)
+ Add appstream metadata to non-deprecated location (#790869)
+ Playlist ordering in views (#772090)
+ Fix style of GdTaggedEntry (#791077)
+ PEP-8 fixes & cleanups (#791481,!7,!9,!10,!17,!18)
+ Update libgd (!8)
+ Fixes to navigating back (#777238)
+ Enable mouse button for navigating back (#771934)
+ Fix constructor deprecation warning (#790127)
+ Fix PyGObject deprecation warning (#788701)
+ Fix order in method call (!21)
+ Fix log decorator order (!22)
+ Use python3 style super() calls (!16)
+ DiscListBoxWidget update favourites (!23)
+ Add the ability to rename playlists (!11)
+ Update README.md (!12)
+
+Thanks to our contributors this release:
+ Abhinav Singh
+ Florian Darfeuille
+ Jean Felder
+ Jeremy Bicha
+ Kainaat Singh
+ Marinus Schraal
+ Niels De Graef
+ Phil Dawson
+ Piotr Drąg
+ Sambhav Kothari
+
+Translations updated:
+ Dutch
+ Romanian
+ Icelandic
+ Persian
+ Catalan (Valencian)
+ German
+ Czech
+ Friulian
+ Norwegian bokmål
+ Croatian
+ Indonesian
+ Serbian
+ Swedish
 
 Overview of changes in 3.26.0
 =============================
