@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.28.2.1
-Release  : 13
+Release  : 14
 URL      : https://download.gnome.org/sources/gnome-music/3.28/gnome-music-3.28.2.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.28/gnome-music-3.28.2.1.tar.xz
 Summary  : No detailed summary available
