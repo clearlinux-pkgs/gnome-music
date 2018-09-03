@@ -1,0 +1,5 @@
+3.30.0
+appstream-glib
+pkgconfig(goa-1.0)
+pkgconfig(libdazzle-1.0)
+pkgconfig(libsoup-2.4)

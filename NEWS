@@ -1,74 +1,203 @@
-Overview of changes in 3.28.2
+Overview of changes in 3.30.0
 =============================
 
+Translations updated:
+ Galician
+ Hungarian
+ Vietnamese
+ Latvian
+ Croatian
+ Danish
+
+Overview of changes in 3.29.92
+==============================
+
+* Make static playlists more reliable
+* Populate views on demand (improves startup)
+* Fix player toolbar song/artist order
+* Switch view navigation from <Ctrl> to <Alt>
+* Add tooltips in more places
+* Style treeview stars
+* Lots of cleanups and reliability fixes
+
 Bugs fixed:
- Fix notification calls on startupt (!147)
- artistalbumswidget: Wait for last album to load (#174)
- grilo: Fix audio check (!159)
+ Fix Flatpak delayed loading (!239)
+ Style treeview stars with CSS (!238)
+ Use alt instead of ctrl for navigating tabs (#198)
+ Do not allow view switching in all modes (!237)
+ Introduce loading state (!233)
+ grilo: Fix crash when Tracker is not (yet) loaded (!230)
+ Populate views when opened (!232)
+ views: Fix now-playing icon display (#203)
+ On last play done, first song gets notified (#60)
+ Shuffle shouldn't replay songs (#154)
+ playlistview: improvements and bugfixes (!227,!229)
+ meson: Do not add version suffix on default build (!228)
+
+Thanks to our contributors this release:
+ Jean Felder
+ Marinus Schraal
+
+Translations updated:
+ Swedish
+ Friulian
+ Brazilian Portuguese
+ Finnish
+ Icelandic
+ Romanian
+ Kazakh
+ Korean
+ Indonesian
+ Italian
+
+Overview of changes in 3.29.91
+==============================
+
+* Finished moving the existing ui to use Gtk.Template
+* Added some minor transitions going to selection-mode
+* Add OARS tag
+* Reword application description
+
+Bugs fixed:
+ Wait for last album to load (#174)
+ appdata: Add OARS tag & reword description (!177)
+ disable sidebar stack transition (!206)
+ playlistview: Add translator context to Play menu (!211)
+ add GOA dependency (#212)
+ use Gtk.Template for AlbumCover (#183)
+ tarball fails to build (#211)
+ use Gtk.Template for About dialog (#183)
+ App-bundles selection-mode headerbar color incorrect (#208)
+ Use Gdk.Event accessors (#213)
+ Add SidebarRow widget (!221)
+ use Gtk.Template for Searchbar and move to widgets (!226)
 
 Thanks to our contributors this release:
  Alexander Mikhaylenko
  Jean Felder
+ Jordan Petridis
  Marinus Schraal
+ Nick Richards
+ Piotr Drąg
+ Tyler Garcia
 
-Overview of changes in 3.28.1
-=============================
+Translations updated:
+ Spanish
+ Slovenian
+ German
+ Polish
+ Turkish
+ Czech
+ Lithuanian
+ Chinese (Taiwan)
+ Greek
+
+Overview of changes in 3.29.90
+==============================
+
+* Lots of widgets ported to use Gtk.Template
+* Added development app bundles to CI
+* Codebase wide cleanups and refactoring
+* Port sidebars away from libgd views
 
 Bugs fixed:
+ Using keyboard reveals the playerbar in in selection mode (#197)
+ High contrast theme not folled for sidebars (#37)
+ Right click to select Albums is inconsistent (#89)
+ Flatpak + CI devops (#185)
+ Music goes into an endless loop (#200)
+ artistalbumswidget: missing attribute artist (#199)
+ searchmode: Leaving selection mode with Escape dismisses search results (#195)
+ Hard transition when entering selection mode (#27)
+
+Thanks to our contributors this release:
+ Apostol Bakalov
+ Jean Felder
+ Jordan Petridis
+ Marinus Schraal
+ Piotr Drąg
+
+Translations updated:
+ Czech
+ Chinese (China)
+ Spanish
+ Chinese (Taiwan)
+ Romanian
+ Friulian
+ Catalan
+ Slovenian
+ German
+ French
+ Greek
+
+Overview of changes in 3.29.2.1
+===============================
+
+* Add release commit to dist tarball
+
+Overview of changes in 3.29.2
+=============================
+
+* Update appdata
+* Fix issue with untranslated UI elements
+* CI use flake8 instead of pep8 & pyflakes
+* CI generate flatpak bundles for every commit and MR
+* Use libsoup for http requests
+* Use CSS styling instead of widget attributes
+* Merge emptystate views
+* Add optional suspend inhibition gsetting
+* Cleanup and split of Player and Toolbar classes
+* Numerous miscellaneous cleanups
+
+Bugs fixed:
+ Partly untranslated user interface (#169)
+ albumartcache: Do not close non-existing stream on error (!95)
+ albumartcache: Fix possible lookup loop (!95)
+ albumartcache: Do not send two signals on error (!95)
  Minor optimizations (!138)
  flatpak: Enable MPRIS and GNOME media keys (!129)
  notificationspopup: Fix source not found warning (!131)
  Ellipsized songs in Artists View are improperly aligned (#173)
- albumwidget: Restore currently played album (#111)
+ Fix notification calls on startup (!147)
+ grilo: Fix audio check (!159)
+ AlbumsView: Fix runtime updates still triggering
+ [playlist dialog] implement empty state dialog (#74)
+ Default search does not search in composer field (#140)
+ SearchView does not use the same model as other views (#160)
+ Use CSS style instead of html markup to color text (#163)
+ Fix Running Length label translation in AlbumViewWidget (#177)
+ local searchtag not removed when doing non-local searches (#130)
+ Replace requests usage with libsoup (#144)
+ Use DzlBoldingLabel for TrackWidget (#178)
+ player: Add optional inhibition of system suspend (#182)
+ Pressing escape when renaming a playlist does not cancel rename (#188)
 
 Thanks to our contributors this release:
- Alexander Mikhaylenko
- Georges Basile Stavracas Neto
+ Ashwin Mohan
+ Apostol Bakalov
  Jean Felder
  Marinus Schraal
+ Adrian Solom
+ Juan José González
+ Bruce Cowan
+ Alexander Mikhaylenko
+ Subhadip Jana
+ Georges Basile Stavracas
+ Piotr Drąg
 
 Translations updated:
- Romanian
- Slovenian
-
-Overview of changes in 3.28.0.1
-===============================
-
-* Fix issue with untranslated UI elements
-
-Bugs fixed:
- Partly untranslated user interface (#169)
-
-Translations updated:
- Russian
- Galician
-
-Overview of changes in 3.28.0
-=============================
-
-* Update appdata
-
-Bugs fixed:
- albumartcache: Do not close non-existing stream on error (!95)
- albumartcache: Fix possible lookup loop (!95)
- albumartcache: Do not send two signals on error (!95)
-
-Thanks to our contributors this release:
- Georges Basile Stavracas Neto
- Marinus Schraal
-
-Translations updated:
- Croatian
  Danish
- Friulian
+ Croatian
+ Greek
  British English
  Turkish
-
-Overview of changes in 3.27.92.1
-================================
-
-Bugs fixed:
- Arch dependent file in /share (#159)
+ Russian
+ Slovenian
+ Romanian
+ Friulian
+ Czech
+ Indonesian
+ Spanish
 
 Overview of changes in 3.27.92
 ==============================
