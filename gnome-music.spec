@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.30.0
-Release  : 15
+Release  : 16
 URL      : https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.30/gnome-music-3.30.0.tar.xz
 Summary  : No detailed summary available
