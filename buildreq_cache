@@ -1,5 +1,9 @@
-3.30.0
+3.30.1
 appstream-glib
+gnome-online-accounts-dev
+grilo-plugins-dev
+libdazzle-dev
+libsoup-dev
 pkgconfig(goa-1.0)
 pkgconfig(libdazzle-1.0)
 pkgconfig(libsoup-2.4)
