@@ -1,46 +1,152 @@
-Overview of changes in 3.30.2
+Overview of changes in 3.32.0
 =============================
 
-* Delayed loading of remote cover art
-* Fix keyboard shortcuts
-* Flatpak fixes
+Translations updated:
+ Finnish
+ Catalan
+ French
+
+Overview of changes in 3.31.92
+==============================
 
 Bugs fixed:
- flatpak: Grilo lua plugin support is disabled (#226)
- Almost none of the keyboard shortcuts work (#238)
+ Fix initial state graphics in dark mode (#258)
+
+Thanks to our contributors this release:
+ Tjipke van der Heide
+ Veerasamy Sevagen
+
+Translations updated:
+ Turkish
+ Finnish
+ Icelandic
+ Dutch
+ Lithuanian
+ Basque
+ Brazilian Portuguese
+ Korean
+ Italian
+ Russian
+ Serbian
+ Friulian
+ German
+ Vietnamese
+ Latvian
+
+Overview of changes in 3.31.91
+==============================
+
+* Show an empty view when Tracker is unavailable
+
+Bugs fixed:
+ Play correct song while paused (#256)
+ Show a warning when Tracker is not available (#165)
+ Cannot cancel 'All' sources in search via button (#92)
+ Crashes when trying to play any song (#244)
+ Crash while tracks are being loaded (#252)
+
+Thanks to our contributors this release:
+ Jean Felder
+ Marinus Schraal
+ Sagar Lakhani
+
+Translations updated:
+ Czech
+ Polish
+ Spanish
+ Romanian
+ Hungarian
+ Swedish
+ Indonesian
+ Slovenian
+ Galician
+ Kazakh
+ Danish
+ Chinese (Taiwan)
+
+Overview of changes in 3.31.90
+==============================
+
+* Add pause on suspend
+* Rework and cleanup MPRIS a lot
+* Use new Adwaita devel styling
+* Partial port to Gtk.EventController
+* Set error style on searchbar entry if applicable
+
+Bugs fixed:
+ Limit composer length (#222)
+ Fix keyboard shortcuts (#238)
+ Correct MPRIS positioning (#227)
+ Fix playlist renaming (#248)
+ Fix Tracker criticals (#251)
+ Fix popover positioning (#214)
+ Pause when suspending (#68)
+ Add error state for searchbar entry (#228)
 
 Thanks to our contributors this release:
  Christophe van den Abbeele
+ Christopher Davis
+ Harry Xie
  Jean Felder
+ Jordan Petridis
  Marinus Schraal
+ Mohanna Datta Yelugoti
+ Nikolay Yanchuk
 
 Translations updated:
- Serbian
+ Czech
+ Slovenian
+ Esperanto
+ Spanish
+ French
+ Greek
+ Friulian
+ Swedish
+ Hungarian
+ Galician
+ Romanian
+ Indonesian
+ Italian
+ Finnish
+ Turkish
+ Polish
+ Catalan
+ Hungarian
 
-Overview of changes in 3.30.1
+Overview of changes in 3.31.1
 =============================
 
+* Replace app menu with Primary menu (initiative #4)
+* Add TheAudioDB for coverart lookup
 * Dark mode fixes
-* Add TheAudioDB support for coverart
-* Fix issues with repeatmode handling
+* Fix crash on opening help
+* New app icon (initiative #2)
+* Flatpak fixes
 
 Bugs fixed:
- albumwidget: Fix checkbox selection (!245)
- Set the appliation id correctly (!241)
- Add TheAudioDB support (!247)
- Do not switch view in selection mode (!246)
- Dark mode fixes (!269,!271)
- player: Synchronize Player and PlayerPlaylist repeat-mode (!274)
- Music crashes when accessing help with Yelp not installed (#220)
+ Fix checkbox selection (!245)
+ Set application id correctly (!241)
+ Add The AudioDB support (!247)
+ Fix search dissapearing on return from child (!253)
+ Clean up data dir (#193)
+ mpris: Prevent crash from play call with no playlist (!255)
+ application: Fix crash on opening help (#22)
+ Darkmode fixes (!269,!271)
+ repeat-mode fixes (!274)
+ Restart remote cover lookup on source availability (!284)
+ ui: Change arrow menu button icons (#233)
 
 Thanks to our contributors this release:
+ Christopher Davis
+ Islam Bahnasy
+ Jakub Steiner
  Jean Felder
  Marinus Schraal
  Shivansh Handa
+ Tapasweni Pathak
 
 Translations updated:
- Russian
- Spanish
+ Serbian
 
 Overview of changes in 3.30.0
 =============================
