@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.32.1
-Release  : 21
+Release  : 22
 URL      : https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.1.tar.xz
 Summary  : Music player and management application
