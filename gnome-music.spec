@@ -4,10 +4,10 @@
 #
 Name     : gnome-music
 Version  : 3.32.2
-Release  : 25
+Release  : 26
 URL      : https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.32/gnome-music-3.32.2.tar.xz
-Summary  : Music player and management application
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: gnome-music-bin = %{version}-%{release}
@@ -19,6 +19,7 @@ Requires: gnome-music-python = %{version}-%{release}
 Requires: gnome-music-python3 = %{version}-%{release}
 Requires: libmediaart
 Requires: pycairo-python3
+Requires: pygobject
 BuildRequires : appstream-glib
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-gnome
@@ -29,6 +30,7 @@ BuildRequires : gnome-online-accounts-dev
 BuildRequires : grilo-plugins-dev
 BuildRequires : itstool
 BuildRequires : libdazzle-dev
+BuildRequires : libmediaart
 BuildRequires : libsoup-dev
 BuildRequires : pkgconfig(goa-1.0)
 BuildRequires : pkgconfig(gobject-introspection-1.0)
@@ -40,6 +42,7 @@ BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(py3cairo)
 BuildRequires : pkgconfig(pygobject-3.0)
 BuildRequires : pkgconfig(tracker-sparql-2.0)
+BuildRequires : pygobject
 
 %description
 =====
@@ -131,8 +134,9 @@ python3 components for the gnome-music package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1557164258
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1562958112
+export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm

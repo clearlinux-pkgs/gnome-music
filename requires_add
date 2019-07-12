@@ -2,3 +2,4 @@
 # picked up automatically. One name per line, no whitespace.
 pycairo-python3
 libmediaart
+pygobject
