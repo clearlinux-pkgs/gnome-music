@@ -1,45 +1,163 @@
-Overview of changes in 3.32.1
+Overview of changes in 3.34.0
 =============================
 
-Bugs fixed:
- Fix player scale starting on first song (#274)
- About dialog movable (#261)
- Keep the same app ID as in 3.30
+This release marks the first stable release after a invasive rewrite of Music
+internals and may still be rough around the edges. Regressions and known issues
+are kept track of in #299, further issue reports are welcome.
 
-Thanks to ou contributors this release:
- Georges Basile Stavacras Neto
- Jean Felder
- Kalev Lember
- Marinus Schraal
-
-Overview of changes in 3.32.1
-=============================
-
-* MPRIS fixes
-* Update help application icon
-* Fix scale update on first song
-
-Bugs fixed:
- Crash with mouse back button (#265)
- Repeat song not working (#266)
+* A flatpak issue with cover art retrieval was fixed
 
 Thanks to our contributors this release:
- Andre Klapper
- Bilal Elmoussaoui
+ Jean Felder
+
+Tranlations updated:
+ Japanese
+ Italian
+
+Overview of changes in 3.33.92
+==============================
+
+This release contains even more bug fixes and cleanups following the core
+rewrite. Regressions and known issues are kept track of in #299, further testing
+and issue reports are welcome.
+
+Thanks to our contributors this release:
+ Hugo Posnic
+ Piotr Drąg
  Jean Felder
  Marinus Schraal
 
 Translations updated:
+ Indonesian
+ Karb
+ Basque
+ Swedish
+ Finnish
+ Romanian
+ Lithuanian
+ Spanish
+ Catalan
+ Polish
+ Serbian
+ German
+ Latvian
+ Slovenian
+ Hungarian
+ Galician
+ Korean
+ British English
+ Turkish
+ French
+ Greek
+ Catalan
+ Brazilian Portuguese
+ Czech
+ Croatian
+
+Overview of changes in 3.33.90
+==============================
+
+This release contains a lot of bug fixes following the rewrite of the core of
+Music. This work is not yet complete, but the overall state should be
+improved. Regressions and known issues are kept track of in #299. Further
+reports are welcome.
+
+Some other things were worked on as well:
+* Search view rewrite and style update
+* Display an empty view if Tracker version is outdated
+
+Thanks to our contributors this release:
+ Piotr Drąg
+ Jean Felder
+ Marinus Schraal
+
+Added translations:
+ Karbi
+
+Translations updated:
+ Portuguese
+ Basque
+ Spanish
+ Romanian
+ Swedish
+
+Overview of changes in 3.33.4
+=============================
+
+This release contains a rewrite of the core of Music. This work is not yet
+complete, but should be in a usable state. Regressions and known issues are
+kept track of in #299. Further reports are welcome.
+
+Some other things were worked on as well:
+* Support gapless playback
+* MPRIS support rewrite
+* Playlists rewrite
+
+Thanks to our contributors this release:
+ Georgers Basile Stavracas Neto
+ Jean Felder
+ Jesus Bermudez Velazquez
+ Marinus Schraal
+
+Translations updated:
+ Hungarian
+ Greek
+ Dutch
  Croatian
  Swedish
+ Slovenian
+ Icelandic
+
+Overview of changes in 3.33.2
+=============================
+
+* Improve Smooth progressbar support
+* Improve display of information for songs with no tags
+* Select a random song at launch when playing a playlist in shuffle mode
+* AppData tags update (initiative #8)
+* MPRIS misc cleanups
+* Lots of general cleanups
+
+Bugs fixed:
+ gnome-music crashes on startup (#105)
+ Stop using GtkBox:padding, GtkBox:fill and GtkBox:expand (#215)
+ Do not rely on Tracker generated metadata (#223)
+ MPRIS2 reports wrong .desktop file name (#263)
+ Crash with mouse 'back' button (#265)
+ Repeat song not working on Gnome Music 3.32.0 (#266)
+ Order of search and select buttons incorrect (#270)
+ flatpak nightly: Clicking on MPRIS player launches wrong version (#273)
+ Incorrect timeline (progress bar) position for m4a file (#274)
+ HeaderBar in selection mode has the search/cancel button order wrong (#275)
+ Repeat All Does Not Repeat Single Songs From Search (#278)
+ Resuming Playback Actually Restarts Song (#280)
+
+Thanks to our contributors this release:
+ Christopher Davis
+ Reuben Dsouza
+ Bilal Elmoussaoui
+ Jean Felder
+ Andre Klapper
+ Kalev Lember
+ Marinus Schraal
+ Veerasamy Sevagen
+ Georges Basile Stavracas Neto
+ Sumaid Syed
+
+Translation updated:
+ Chinese (China)
+ Chinese (Taiwan)
+ Croatian
+ Esperanto
+ Friulian
  Hungarian
  Indonesian
- Esperanto
- Polish
- Romanian
  Italian
- Chinese (Taiwan)
- Brazilian Portuguese
+ Polish
+ Portuguese (Brazil)
+ Romanian
+ Spanish
+ Swedish
 
 Overview of changes in 3.32.0
 =============================
