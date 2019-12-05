@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.34.1
-Release  : 29
+Release  : 30
 URL      : https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.1.tar.xz
 Summary  : No detailed summary available
