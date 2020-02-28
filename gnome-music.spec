@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.34.3
-Release  : 32
+Release  : 33
 URL      : https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.3.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.34/gnome-music-3.34.3.tar.xz
 Summary  : Music player and management application
@@ -136,7 +136,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578419184
+export SOURCE_DATE_EPOCH=1582931073
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
