@@ -1,34 +1,175 @@
-Overview of changes in 3.34.3
+Overview of changes in 3.36.1
 =============================
 
-* Fix various crashes due to regressions during the 3.34 core rewrite
-* Restore keyboard shortcut to open help
+• Fix crash when Pango 1.44 is not available
+• Do not change python module search path
+• Various CoreModel and Playlist binding optimizations
+• Various crash and bugfixes
 
 Bugs fixed:
- Switching to playlist gives an empty view (#348)
- Disable play action on empty playlists to prevent a crash (#354)
- Music crashes when media key "play" is pressed while no song is selected (#355)
- Crash when pressing Alt+LeftKey in searchview (#357)
+ Crash while searching due to bugs in searchview.py (#372)
+ Do not change the module search path (#377)
+ Wrong song count in favourite playlist (#376)
+ First song selected displays selected count as 2 (#379)
+ App crashing on start: type object 'AttrFontFeatures' has no attribute 'new' (#374)
 
 Thanks to our contributors this release:
+ Ashwani Singh Tanwar
+ Jean Felder
+ Marinus Schraal
+ Weifeng Lai
+
+Updated translations:
+ Catalan
+ Norwegian Bokmål
+ Ukrainian
+
+Overview of changes in 3.36.0
+=============================
+
+Updated translations:
+ Italian
+ German
+ Dutch
+
+Overview of changes in 3.35.92
+==============================
+
+• Restore smart playlists update
+• Improve Tracker content tracking
+• Flatpak cleanups and updates
+
+Bugs fixed:
+ Properly load Grilo Tracker plugin (!650)
+ Stop a deleted playlist if it is playing (!661)
+ Misc playlists fixes  (!654)
+ Flatpak: remove unused dleyna support (!644)
+ flatpak assorted fixes (!645)
+
+Thanks to our contributors this release:
+ Georges Basile Stavracas Neto
+ Jackson Campolattaro
+ Marinus Schraal
+ Jean Felder
+
+Updated translations:
+ Brazilian Portuguese
+ British English
+ Catalan
+ Chinese (Taiwan)
+ Croatian
+ Czech
+ Danish
+ Finnish
+ French
+ Galician
+ Hungarian
+ Korean
+ Indonesian
+ Lithuanian
+ Persian
+ Polish
+ Serbian
+ Spanish
+ Swedish
+ Turkish
+
+Overview of changes in 3.35.91.1
+================================
+
+Bug fixed:
+ Possible crash on warning (!643)
+
+Overview of changes in 3.35.91
+==============================
+
+• Use natural order for sorting
+• Expose Last.fm scrobbler in the UI
+• Add local runtime cache for scrobbling
+• Add GLib style logging and remove old logging and debug switch
+
+Bugs fixed:
+ Sort albums title containing digits numerically (#22)
+ PlaylistsView: select the next playlist on deletion (#359)
+ Expose scrobbling support (#218)
+ Switching to playlist gives an empty view (#348)
+ Use tabular numbers for song duration (!623)
+ Crash after select all items (#364)
+ Deleting an empty playlist crashes (#365)
+ Disable selection button in Playlist View while searching (#366)
+ Help overlay remove Ctrl+F1 shortcut (!643)
+
+Thanks to our contributors this release:
+ Use Alexander Mikhaylenko
+ Chinmay Gurjar
+ Jean Felder
+ Marinus Schraal
+ Sabri Ünal
+
+Translation added:
+ Malay
+
+Updated translations:
+ Greek
+ Indonesian
+ Spanish
+ Slovak
+ Chinese (Taiwan)
+ Finnish
+ Friulian
+ Brazilian Portuguese
+ Italian
+ Swedish
+ Croatian
+ Persian
+ Lithuanian
+ Japanese
+ Basque
+ French
+ Turkish
+ Czech
+ British English
+ Serbian
+ Galician
+
+Overview of changes in 3.35.3
+=============================
+
+* Improve Tracker content tracking
+* Update appdate screenshots
+
+Bugs fixed:
+ F1 key is not opening help page (#353)
+ Play on empty playlist crashes Music (#354,#355)
+ Crash when pressing Alt+Left in SearchView (#357)
+ Update the appdata screenshots (#327)
+
+Thanks to our contributors this release:
+ Ishaan Shah
  Jean Felder
  Marinus Schraal
 
 Added translations:
- Malay
+ Basque
+ Indonesian
 
-Translations updated:
+Updated translations:
  Chinese (Taiwan)
- Ukrainian
+ Ukranian
+ Brazilian Portuguese
+ Galician
 
-Overview of changes in 3.34.2
+Overview of changes in 3.35.2
 =============================
 
-* Load Album Covers on demand
+* Album Covers are now loaded on demand
+* Use MusicBrainz identifiers to download album covers
 * Restore support for "Album Artist" tag
 * Disable online search by default
-* CoreModel misc cleanups and fixes
-* MPRIS misc cleanups and fixes
+* Restore MPRIS playlist support and misc MPRIS cleanups
+* Playlist fixes
+* Bring back loading notifications
+* Nightly application icon
 
 Bugs fixed:
  Fix a crash in Last.fm support (#328)
@@ -39,34 +180,34 @@ Bugs fixed:
  GNOME Music crashes if xdg_music_dir is not set (#338)
  group artists with a feat or an original artist under the same artist (#331)
  Songs Not in ~/Music Show Up In Search (#317)
-
-Thanks to our contributors this release:
- Jean Felder
- Marinus Schraal
-
-Overview of changes in 3.34.1
-=============================
-
-* Restore MPRIS playlist support
-* Playlist fixes
-* Bring back loading notifications
-
-Bugs fixed:
  Fix visual glitches (#300)
  Use pkglibdir for gfmlibdir (!509)
  Limit smartplaylist content to XDG Music dir (#311)
  Crash when removing GOA account (#145)
+ Model fixes (!557, !552, !533, !499)
+ Fix icon rendering issues (!543)
+ Selection fixes (!528)
+ Restore the development style (!563)
 
 Thanks to our contributors this release:
- Jan Alexander Steffens
  Jean Felder
+ Sam Hewitt
  Marinus Schraal
+ Jan Alexander Steffens
+ Jakub Steiner
+ Sumaid Syed
+ Sam Thursfield
+
+Added translations:
+ Tamil
 
 Translations updated:
- Czech
- Persian
- Friulian
+ Catalan
  Danish
+ Dutch
+ Friulian
+ Persian
+ Spanish
 
 Overview of changes in 3.34.0
 =============================
