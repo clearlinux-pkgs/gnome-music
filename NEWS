@@ -1,49 +1,133 @@
-Overview of changes in 3.36.2
+Overview of changes in 3.38.0
 =============================
-
-• Fix two crashers
-
-Bugs fixed:
- Crash on playlist change check (#382)
- Rare crash on some music files (!701)
-
-Thanks to our contributors this release:
- Marinus Schraal
-
-Translation added:
- Ukranian
 
 Updated translations:
- Hebrew
- Slovak
- Russian
- Slovenian
- Chinese (China)
+ Danish
+ Greek
+ Hungarian
+ Italian
+ Latvian
+ Portuguese
 
-Overview of changes in 3.36.1
-=============================
+Overview of changes in 3.37.92
+==============================
 
-• Fix crash when Pango 1.44 is not available
-• Do not change python module search path
-• Various CoreModel and Playlist binding optimizations
-• Various crash and bugfixes
+* Port to Tracker 3
+* Art retrieval complete rework
+* Flatpak cleanups and updates
 
 Bugs fixed:
+ gnome-music gets stuck when next button is pressed when current song is about to finish (#375)
+ Selection mode search doesn't work (#405)
+ Selecting an album in albums view in selection mode randomly deselects other albums (#406)
+ Selection mode only works for artists during search (#407)
+ Music crashed if gnome-online-accounts is unavailable (#410)
+ MPRIS playlist fixes (!741)
+ Gracefully handle locale.{bind,}textdomain not being available (!735)
+
+Thanks to our contributors this release:
+ Adam Blanchet
+ Carlos Garnacho
+ Chinmay Gurjar
+ Jean Felder
+ Marinus Schrall
+ Piotr Drąg
+ Rasmus Thomsen
+ Sam Thursfield
+ Simon McVittie
+
+Updated translation:
+ Basque
+ Brazilian Portuguese
+ Catalan
+ Chinese (China)
+ Croatian
+ Czech
+ Dutch
+ Finnish
+ French
+ Friulian
+ Galician
+ German
+ Indonesian
+ Japanese
+ Kazakh
+ Korean
+ Lithuanian
+ Persian
+ Polish
+ Serbian
+ Slovak
+ Slovenian
+ Spanish
+ Swedish
+ Turkish
+ Ukrainian
+
+Overview of changes in 3.37.3
+=============================
+
+Bugs fixed:
+ pauseonsuspend: Fix calls to MusicLogger.warning() (!724)
+ Duplication of menu bar (#387)
+ High CPU usage (#360)
+ Bind more SongWidget properties (!663)
+
+Thanks to our contributors this release:
+ Evan Nehring
+ Jean Felder
+ Marinus Schraal
+ Nils Reuße
+
+Updated translation:
+ Kazakh
+
+Overview of changes in 3.37.2
+=============================
+
+* Use Gtk.Template for all the Views and remove BaseView
+* Prefer Albumartist field for artist search
+* Change Artist view selection from artist to song
+* Extend Gtk.Template usage for Window
+* Deinitialize Grilo on shutdown
+* Music now explicitly depends on Pango 1.44 or above
+* Flatpak cleanups and updates
+* Various widgets style and code cleanups
+
+Bugs fixed:
+ Artist view should support music selection (#26)
+ In-app notifications need to be dismissable (#259)
+ Stop using show_all (#320)
  Crash while searching due to bugs in searchview.py (#372)
- Do not change the module search path (#377)
+ Crash on start: object 'AttrFontFeatures' has no attribute 'new' (#374)
  Wrong song count in favourite playlist (#376)
- First song selected displays selected count as 2 (#379)
- App crashing on start: type object 'AttrFontFeatures' has no attribute 'new' (#374)
+ Please stop changing the module search path (#377)
+ Use libsoup for art retrieval (#378)
+ Music crashes on 'check_smart_playlist_change' call (#382)
 
 Thanks to our contributors this release:
  Ashwani Singh Tanwar
+ Atharva Veer
+ Chinmay Gurjar
+ Erik Inkinen
+ Evan Nehring
  Jean Felder
  Marinus Schraal
- Weifeng Lai
+ Weifang Lai
+
+Added translations:
+ Ukrainian
 
 Updated translations:
  Catalan
+ Chinese (China)
+ Chinese (Taiwan)
+ Hebrew
  Norwegian Bokmål
+ Romanian
+ Russian
+ Slovak
+ Slovenian
  Ukrainian
 
 Overview of changes in 3.36.0
