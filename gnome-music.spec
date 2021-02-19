@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 3.38.2
-Release  : 44
+Release  : 45
 URL      : https://download.gnome.org/sources/gnome-music/3.38/gnome-music-3.38.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/3.38/gnome-music-3.38.2.tar.xz
 Summary  : No detailed summary available
