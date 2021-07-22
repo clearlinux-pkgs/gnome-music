@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 40.1.1
-Release  : 50
+Release  : 51
 URL      : https://download.gnome.org/sources/gnome-music/40/gnome-music-40.1.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/40/gnome-music-40.1.1.tar.xz
 Summary  : No detailed summary available
