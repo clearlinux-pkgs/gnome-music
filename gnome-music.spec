@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 41.0
-Release  : 55
+Release  : 56
 URL      : https://download.gnome.org/sources/gnome-music/41/gnome-music-41.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/41/gnome-music-41.0.tar.xz
 Summary  : No detailed summary available
@@ -131,7 +131,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1632416570
+export SOURCE_DATE_EPOCH=1635956180
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
