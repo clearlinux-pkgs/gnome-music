@@ -4,7 +4,7 @@
 #
 Name     : gnome-music
 Version  : 42.1
-Release  : 59
+Release  : 60
 URL      : https://download.gnome.org/sources/gnome-music/42/gnome-music-42.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/42/gnome-music-42.1.tar.xz
 Summary  : No detailed summary available
@@ -40,7 +40,6 @@ BuildRequires : pkgconfig(libmediaart-2.0)
 BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(py3cairo)
 BuildRequires : pkgconfig(pygobject-3.0)
-BuildRequires : pkgconfig(tracker-sparql-2.0)
 BuildRequires : pkgconfig(tracker-sparql-3.0)
 
 %description
@@ -118,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1650903330
+export SOURCE_DATE_EPOCH=1661800998
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -132,7 +131,7 @@ ninja -v -C builddir
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/gnome-music
-cp %{_builddir}/gnome-music-42.1/LICENSE %{buildroot}/usr/share/package-licenses/gnome-music/9c5c5b98b412c4716f04530b90c221a11d5ba18a
+cp %{_builddir}/gnome-music-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/gnome-music/9c5c5b98b412c4716f04530b90c221a11d5ba18a
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang org.gnome.Music
 

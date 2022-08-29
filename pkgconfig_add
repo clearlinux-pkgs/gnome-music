@@ -1,7 +1,7 @@
 # This file contains additional pkgconfig build requirements that did
 # not get picked up automatically. One name per line, no whitespace.
 libmediaart-2.0
-tracker-sparql-2.0
+tracker-sparql-3.0
 pygobject-3.0
 py3cairo
 grilo-0.3
