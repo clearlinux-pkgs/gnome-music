@@ -1,10 +1,40 @@
-Overview of changes in 42.1
+Overview of changes in 44.0
 ===========================
+
+• Update appdata for the 44.0 release
+
+Overview of changes in 44.rc
+============================
+
+• Shortcuts menu cleanups
+• Misc focus fixes in album widgets
+• Decrease memory usage in SongsView
+
+Bugs Fixed:
+ SongView popup is a memory hog (#495)
+ Shuffle on/off mixup (#543)
+ Default template for issues (#525)
+
+Thanks to our contributors this release:
+ Andre Klapper
+ Automeris Naranja
+ Ezike Ebuka
+ Jean Felder
+ Marinus Schraal
+ Sabri Ünal
+
+
+Overview of changes in 44.beta
+==============================
 
 • Make shuffle shuffle again
 • Fix time display in RTL languages
+• Port to soup 3
+• Port about to AdwAboutWindow
 • No longer mismatch art on scrolling
 • Fix async queue block on fresh art retrieval
+• Use new GNOME Settings app id in flatpak
+• Fix welcome image rendering
 
 Bugs fixed:
  Rework ArtStack to handle cycling widgets better (#500)
@@ -12,16 +42,54 @@ Bugs fixed:
  Time is reversed in RTL (#509)
 
 Thanks to our contributors this release:
+ Carlos Garnacho
+ Christopher Davis
+ Georges Basile Stavracas Neto
+ Jean Felder
  Marinus Schraal
  Yosef Or Boczko
 
 Updated or added translations:
- Latvian
- Dutch
+ Abkhazian
+ Basque
+ Belarusian
+ Brazilian Portuguese
+ Bulgarian
  Catalan
- Icelandic
- French
  Chinese (China)
+ Chinese (Taiwan)
+ Croatian
+ Czech
+ Danish
+ Dutch
+ Finnish
+ French
+ Friulian
+ Galician
+ Georgian
+ German
+ Greek
+ Hebrew
+ Hungarian
+ Icelandic
+ Indonesian
+ Kazakh
+ Korean
+ Latvian
+ Lithuanian
+ Nepali
+ Occitan
+ Persian
+ Polish
+ Portuguese
+ Russian
+ Serbian
+ Slovak
+ Slovenian
+ Spanish
+ Swedish
+ Turkish
+ Ukrainian
 
 
 Overview of changes in 42.0
