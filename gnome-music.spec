@@ -5,7 +5,7 @@
 #
 Name     : gnome-music
 Version  : 44.0
-Release  : 68
+Release  : 69
 URL      : https://download.gnome.org/sources/gnome-music/44/gnome-music-44.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/44/gnome-music-44.0.tar.xz
 Summary  : An Extensible Extension Language
@@ -119,7 +119,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679689980
+export SOURCE_DATE_EPOCH=1680029563
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
