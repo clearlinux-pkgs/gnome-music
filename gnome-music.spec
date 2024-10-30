@@ -7,7 +7,7 @@
 #
 Name     : gnome-music
 Version  : 47.0
-Release  : 75
+Release  : 76
 URL      : https://download.gnome.org/sources/gnome-music/47/gnome-music-47.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-music/47/gnome-music-47.0.tar.xz
 Summary  : MPEG Audio Decoder
